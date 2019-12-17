@@ -24,26 +24,6 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
 
 ### Running Tests
 
-* Tests in Parallel:
-	```
-	$ ./node_modules/.bin/protractor conf.js
-	```
-
-[Sauce Labs Dashboard](https://saucelabs.com/beta/dashboard/)
-
-### Advice/Troubleshooting
-
-1. There may be additional latency when using a remote webdriver to run tests on Sauce Labs. Timeouts or Waits may need to be increased.
-    * [Selenium tips regarding explicit waits](https://wiki.saucelabs.com/display/DOCS/Best+Practice%3A+Use+Explicit+Waits)
-
-### Resources
-##### [Sauce Labs Documentation](https://wiki.saucelabs.com/)
-
-##### [SeleniumHQ Documentation](http://www.seleniumhq.org/docs/)
-
-##### [Protractor Documentation](https://angular.github.io/protractor/#/api)
-
-##### [Node Documentation](https://nodejs.org/en/docs/)
-
-##### [Stack Overflow](http://stackoverflow.com/)
-* A great resource to search for issues not explicitly covered by documentation
+*Make sure you git base in on and you have to paste the saucelab credetials there. 
+    $ export SAUCE_USERNAME=<your Sauce Labs username>
+	$ export SAUCE_ACCESS_KEY=<your Sauce Labs access key>
