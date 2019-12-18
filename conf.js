@@ -3,7 +3,7 @@ exports.config = {
     sauceKey: process.env.SAUCE_ACCESS_KEY,
     sauceRegion: 'eu',
 
-    specs: ['specs/*spec.js'],
+    specs: ['*spec.js'],
     //sauceRegion: 'eu',
 
     onPrepare: function () {
