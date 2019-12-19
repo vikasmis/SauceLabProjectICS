@@ -1,14 +1,13 @@
 const expect = require('chai').expect;
+let AIO = require('./pages/AIO').personalInformation
 
 describe('Invalid login', () => {
   it('should not be able to login successfully', async () => {
-    browser.ignoreSynchronization = true;
+    browser.ignoreSynchronization = false;
     await browser.get('https://www.saucedemo.com');
-
-    await element(by.id('user-name')).sendKeys('locked_out_user');
-    await element(by.id('password')).sendKeys('secret_sauce');
-    await element(by.css('.btn_action')).click();
-
+    await AIO.username.sendKeys('locked_out_user');
+    await AIO.password.sendKeys('secret_sauce');
+    await AIO.button.click();
     expect(await element(by.css('.error-button')).isDisplayed()).to.be.true;
   });
 });
