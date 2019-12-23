@@ -1,8 +1,11 @@
 var AIO = function () {
     this.personalInformation = {
-        username: element(by.id('user-name')),
-        password: element(by.id('password')),
-        button: element(by.css('.btn_action'))
+        acceptButton:$('[translate="minimalDemands.acceptButton"]'),
+        submit:$('.button-promise '),
+        personalTitle:$$('[translate="WORLD.apply-for-credit-card.personal.title"]').get(0)
     }
+function getURL(){
+    
+}
 };
 module.exports = new AIO();
