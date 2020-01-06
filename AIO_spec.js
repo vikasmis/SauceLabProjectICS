@@ -8,6 +8,5 @@ fdescribe('AIO', () => {
     await AIO.acceptButton.click()
     await AIO.submit.click()
     expect(await AIO.personalTitle.isDisplayed()).to.be.true;
-    
   });
 });
