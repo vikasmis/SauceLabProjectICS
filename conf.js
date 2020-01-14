@@ -2,7 +2,7 @@ exports.config = {
     sauceUser: process.env.SAUCE_USERNAME,
     sauceKey: process.env.SAUCE_ACCESS_KEY,
     sauceRegion: 'eu',
-
+    'tunnelIdentifier': 'Unnamed tunnel',
     specs: ['*spec.js'],
     //sauceRegion: 'eu',
 
